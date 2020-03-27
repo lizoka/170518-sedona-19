@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Liza Neverova](https://up.htmlacademy.ru/adaptive/19/user/170518).
-* Наставник: `Неизвестно`.
+* Наставник: [Геннадий Максимов] (https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
