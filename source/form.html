@@ -18,11 +18,11 @@
                 </a>
             </li>
             <li class="main-nav__item ">
-                <a class="main-nav__link">Фото и видео 
+                <a class="main-nav__link">Фото и видео
                 </a>
             </li>
             <li class="main-nav__item ">
-                <a class="main-nav__link" href="form.html">Форма отзыва 
+                <a class="main-nav__link" href="form.html">Форма отзыва
                 </a>
             </li>
             <li class="main-nav__item ">
@@ -34,9 +34,8 @@
               <span class="visually-hidden">Закрыть меню</span>
         </button>
     </nav>
-    <a class="page-header__logo">
-        <img src="https://via.placeholder.com/100x85" width="100" height="85"
-             alt="Седона">
+    <a class="page-header__logo" href="index.html">
+        <img src="https://via.placeholder.com/100x85" width="100" height="85" alt="Седона">
     </a>
 </header>
 
@@ -45,7 +44,77 @@
         <h1 class="visually-hidden">Sedona</h1>
         <img class="intro_img-text" src="https://via.placeholder.com/280x210" width="280" height="210" alt="Интро текст">
     </section>
+    <section class="feedback">
+      <div class="feedback-intro">
+        <h2 class="feedback-intro__title">Оставьте свой отзыв</h2>
+        <p class="feedback-intro__info">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
 
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-form-group_name">
+          <h2>Представьтесь:</h2>
+            <label for="firstname">Имя*</label>
+              <input type="text" name="name" id="firstname" placeholder="Петр">
+            <label for="lastname">Фамилия*</label>
+              <input type="text" name="name" id="lastname" placeholder="Иванов">
+            <label for="middlename">Отчество</label>
+              <input type="text" name="name" id="middlename" placeholder="Александрович">
+        </div>
+
+        <div class="feedback-form-group_contact">
+          <h2>Контактная информация:</h2>
+            <label for="phone">Контактный телефон*:</label>
+              <input type="number" name="phone" id="phone" placeholder="Введите телефон">
+            <label for="email">Электронная почта*:</label>
+              <input type="email" name="email" id="email" placeholder="Введите e-mail">
+        </div>
+
+        <div class="feedback-form-group_impression">
+          <h2>Ваше общее впечатление:</h2>
+          <input type="radio" name="question" value="positive" id="positive" checked>
+            <label for="positive">
+              <b>Скорее положительное</b>
+             </label>
+          <input type="radio" name="question" value="negative" id="negative">
+            <label for="negative">
+              <b>Скорее отрицательное</b>
+            </label>
+          <input type="radio" name="question" value="middle" id="middle">
+            <label for="middle">
+              <b>Затрудняюсь ответить</b>
+            </label>
+        </div>
+
+        <div class="feedback-form-group_checkbox">
+          <h2>Посещенные достопримечательности:</h2>
+          <input type="checkbox" name="sight1" id="dev-tower" checked>
+            <label for="dev-tower">
+              <b>Мост Дьявола</b>
+            </label>
+          <input type="checkbox" name="sight2" id="mount-bell" checked>
+            <label for="mount-bell">
+              <b>Гора-Колокол</b>
+             </label>
+          <input type="checkbox" name="sight3" id="sl-park" checked>
+            <label for="sl-park">
+              <b>Слайд-парк</b>
+            </label>
+          <input type="checkbox" name="sight4" id="red-rock">
+            <label for="red-rock">
+              <b>Красные скалы</b>
+            </label>
+        </div>
+
+        <div class="feedback-form-group_message">
+        <label for="message">
+          <b>Опишите свои эмоции:</b>
+        </label>
+          <textarea name="message" id="message" rows="10" cols="30">Опишите подробно все свои восторги</textarea>
+
+          <input class="feedback-form_btn" type="submit" value="Отправить отзыв">
+        </div>
+      </form>
+    </section>
 </main>
 
 <footer class="page-footer">
@@ -59,13 +128,13 @@
             </li>
             <li class="social__item">
                 <a class="social__link" href="#nowhere" aria-label="Это наш Твиттер"> <!-- Здесь будет код свг-->
-                    
+
                 </a>
             </li>
             <li class="social__item">
                 <a class="social__link" href="#nowhere"
                    aria-label="Это наш Ютуб">
-                   <!-- Здесь будет код свг--> 
+                   <!-- Здесь будет код свг-->
                 </a>
             </li>
         </ul>
