@@ -1,0 +1,10 @@
+.inspiration_list {
+    display: flex;
+    flex-direction: column;
+}
+.inspiration__header {
+    @include font-bold;
+}
+.inspiration__athour {
+     @include font-norm;
+}
