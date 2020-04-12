@@ -1,140 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Sedona</title>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Sedona</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="page-header">
-    <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-            <li class="main-nav__item ">
-                <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item ">
-                <a class="main-nav__link" href="photo.html">Фото и видео
-                </a>
-            </li>
-            <li class="main-nav__item ">
-                <a class="main-nav__link" href="form.html">Форма отзыва
-                </a>
-            </li>
-            <li class="main-nav__item ">
-                <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy
-                </a>
-            </li>
-        </ul>
-        <button class="main-nav__toggle-close" type="button">
-              <span class="visually-hidden">Закрыть меню</span>
-        </button>
-    </nav>
-    <a class="page-header__logo">
-        <img src="https://via.placeholder.com/100x85" width="100" height="85" alt="Седона">
-    </a>
+  <nav class="page-header__main-nav main-nav">
+    <button class="main-nav__toggle" type="button">
+      <span class="visually-hidden">Открыть/закрыть меню</span>
+    </button>
+    <ul class="main-nav__list">
+      <li class="main-nav__item ">
+        <a class="main-nav__link">Главная</a>
+      </li>
+      <li class="main-nav__item ">
+        <a class="main-nav__link" href="photo.html">Фото и видео
+        </a>
+      </li>
+      <li class="main-nav__item ">
+        <a class="main-nav__link" href="form.html">Форма отзыва
+        </a>
+      </li>
+      <li class="main-nav__item ">
+        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <a class="page-header__logo">
+    <img src="https://via.placeholder.com/100x85" width="100" height="85" alt="Седона">
+  </a>
 </header>
 
 <main>
-    <section class="intro">
-        <h1 class="visually-hidden">Sedona</h1>
-            <img class="intro_img-text" src="https://via.placeholder.com/280x210" width="280" height="210" alt="Интро текст">
-    </section>
+  <section class="intro">
+    <h1 class="visually-hidden">Sedona</h1>
+    <img class="intro_img-text" src="https://via.placeholder.com/280x210" width="280" height="210" alt="Интро текст">
+  </section>
+
+  <section class="features">
+    <h2 class="visually-hidden">Преимущества города</h2>
+    <div class="features__intro">
+      <b class="features__title">Седона- небольшой городок в Аризоне, заслуживающий большего!</b>
+      <p class="features__info">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </div>
+    <ul class="features__list">
+      <li class="features__item features__item--big">
+
+        <article class="feature-card feature-card--big">
+          <b class="feature-card__name">Настоящий городок</b>
+          <p class="feature-card__number feature-card__number--big">— №1 —</p>
+          <p class="feature-card__text feature-card__text--big">Седона не атракцион для туристов, там течет своя жизнь</p>
+        </article>
+
+        <img class="feature-card__photo" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото.Настоящий городок">
+
+      </li>
+    </ul>
+
+    <ul class="features__bullet-list">
+      <li class="features__bullet bullet">
+        <article class="bullet">
+          <b class="bullet__title">Жилье</b>
+          <p class="bullet__text">Рекомендуем пожить в настоящем отеле, все как в кино!</p>
+        </article>
+      </li>
+      <li class="features__bullet bullet">
+        <article class="bullet">
+          <b class="bullet__title">Сувениры</b>
+          <p class="bullet__text">Не только китайского, но и местного производства!</p>
+        </article>
+      </li>
+      <li class="features__bullet bullet">
+        <article class="bullet">
+          <b class="bullet__title">Еда</b>
+          <p class="bullet__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </article>
+      </li>
+    </ul>
 
 
-    <section class="features">
-        <h2 class="visually-hidden">Преимущества города</h2>
-        <div class="features__intro">
-            <b class="features__title">Седона- небольшой городок в Аризоне, заслуживающий большего!</b>
-            <p class="features__info">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        </div>
-        <ul class="features__item-list features__item-list--big">
-            <li class="features__item features__item--big">
-                <b class="features__name">Настоящий городок</b>
-                <p class="features__number features__number--big">— №1 —</p>
-                <p class="features__text features__text--big">Седона не атракцион для туристов, там течет своя жизнь</p>
-                <img class="features__photo" src="C:/Users/liza/Desktop/HTML Academy/senoda/source/img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото.Настоящий городок">
-            </li>
-        </ul>
+    <ul class="features__list ">
+      <li class="features__item features__item--big">
+        <article class="feature-card feature-card--big">
+          <div class="feature-card__info">
+            <b class="feature-card__name">Там есть мост дьявола</b>
+            <p class="feature-card__number feature-card__number--big">— №2 —</p>
+            <p class="feature-card__text feature-card__text--big">Да, по нему можно пройтись, если вы осмелитесь конечно</p>
+          </div>
+          <img class="feature-card__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото.Мост дьявола">
+        </article>
 
-        <div class="features__bullet-item bullet">
-                <b class="bullet__title">Жилье</b>
-                <p class="bullet__text">Рекомендуем пожить в настоящем отеле, все как в кино!</p>
-        </div>
-        <div class="features__bullet-item bullet">
-                <b class="bullet__title">Сувениры</b>
-                <p class="bullet__text">Не только китайского, но и местного производства!</p>
-        </div>
-        <div class="features__bullet-item bullet">
-                <b class="bullet__title">Еда</b>
-                <p class="bullet__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </div>
+      </li>
+      <li class="features__item">
+        <article class="feature-card">
+          <div class="feature-card__info">
+            <b class="feature-card__name"> Небольшая площадь </b>
+            <p class="feature-card__number">— №3 —</p>
+            <p class="feature-card__text">Все интересные места находятся очень близко</p>
+          </div>
+        </article>
+      </li>
+      <li class="features__item">
+        <article class="feature-card">
+          <div class="feature-card__info">
+            <b class="feature-card__name">Красивая дорога</b>
+            <p class="feature-card__number">— №4 —</p>
+            <p class="feature-card__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+        </article>
+      </li>
+      <li class="features__item">
+        <article class="feature-card">
+          <div class="feature-card__info">
+            <b class="feature-card__name">Мало туристов</b>
+            <p class="feature-card__number">— №5 —</p>
+            <p class="feature-card__text">Большинство едет в Гранд кантон и толпится там</p>
+          </div>
+        </article>
+      </li>
+    </ul>
 
-        <ul class="features__item-list ">
-            <li class="features__item features__item--big">
-                <b class="features__name">Там есть мост дьявола</b>
-                <p class="features__number features__number--big">— №2 —</p>
-                <p class="features__text features__text--big">Да, по нему можно пройтись, если вы осмелитесь конечно</p>
-                <img class="features__photo" src="file://C:/Users/liza/Desktop/HTML Academy/senoda/source/img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото.Мост дьявола">
-            </li>
-            <li class="features__item">
-                <b class="features__name"> Небольшая площадь </b>
-                <p class="features__number">— №3 —</p>
-                <p class="features__text">Все интересные места находятся очень близко</p>
-            </li>
-            <li class="features__item">
-                <b class="features__name">Красивая дорога</b>
-                <p class="features__number">— №4 —</p>
-                <p class="features__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-            </li>
-            <li class="features__item">
-                <b class="features__name">Мало туристов</b>
-                <p class="features__number">— №5 —</p>
-                <p class="features__text">Большинство едет в Гранд кантон и толпится там</p>
-            </li>
-        </ul>
-
-    </section>
-    <section class="page-map">
-      <h2 class="visually-hidden">Карта</h2>
-        <b class="page-map__title">Заинтересовались?</b>
-        <p class="page-map__info">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="page-map__link" target="_blank" href="">Найти гостиницу</a>
-        <iframe class="page-map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee6a4400ffcc18b5ec12fda6fbb714ca5249ceeca7e73969ef9d6357f73f4edc&amp;source=constructor" width="320" height="345" ></iframe>
-    </section>
+  </section>
+  <section class="interested">
+    <h2 class="visually-hidden">Поиск гостиницы</h2>
+    <b class="interested__title">Заинтересовались</b>
+    <b class="interested__text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
+      Седоне</b>
+    <a class="interested__btn btn" href="#nowhere">Найти гостиницу</a>
+  </section>
+  <div class="map">
+    <iframe class="page-map__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee6a4400ffcc18b5ec12fda6fbb714ca5249ceeca7e73969ef9d6357f73f4edc&amp;source=constructor"
+            width="100%" height="345"></iframe>
+  </div>
 
 
 </main>
 
 <footer class="page-footer">
-    <p class="page-footer__hashtag">#Visitsedona</p>
-    <div class="page-footer__social social">
-        <ul class="social__list ">
-            <li class="social__item">
-                <a class="social__link" href="#nowhere" aria-label="Это наш Фейсбук">
-                    <!-- Здесь будет код свг-->
-                </a>
-            </li>
-            <li class="social__item">
-                <a class="social__link" href="#nowhere" aria-label="Это наш Твиттер"> <!-- Здесь будет код свг-->
+  <p class="page-footer__hashtag">#Visitsedona</p>
+  <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link" href="#nowhere" aria-label="Это наш Фейсбук">
+          <!-- Здесь будет код свг-->
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#nowhere" aria-label="Это наш Твиттер"> <!-- Здесь будет код свг-->
 
-                </a>
-            </li>
-            <li class="social__item">
-                <a class="social__link" href="#nowhere" aria-label="Это наш Ютуб"><!-- Здесь будет код свг-->
-                </a>
-            </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-                    <!-- Здесь будет свг код-->
-            </a>
-        </div>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#nowhere" aria-label="Это наш Ютуб"><!-- Здесь будет код свг-->
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <!-- Здесь будет свг код-->
+      </a>
     </div>
 </footer>
 

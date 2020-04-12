@@ -1,25 +1,27 @@
 .page-footer {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
+
 .page-footer__hashtag {
-    @include font-bold;
-    margin: 43px 0px;
-    text-align: center;
+  margin: 43px 0;
+  text-align: center;
 }
+
 .social__list {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
 }
+
 .social__item {
-    height: 50px;
-    width: 50px;
-    margin: 0 4px;
-    background-color: $bg-color;
+  height: 50px;
+  width: 50px;
+  margin: 0 4px;
+  background-color: $bg-color;
 }
+
 .page-footer__copyright {
-    @include font-norm;
-    margin: 43px 0px 25px 0;
-    text-align: center;
+  margin: 43px 0 25px 0;
+  text-align: center;
 }

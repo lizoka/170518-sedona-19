@@ -1,9 +1,10 @@
 @import "../../node_modules/normalize.css/normalize";
+@import "global/fonts";
 @import "global/variables";
 @import "global/mixin";
 @import "global/scaffolding";
-@import "global/fonts";
 @import "block/page-header";
+@import "block/main-nav";
 @import "block/intro";
 @import "block/features";
 @import "block/page-map";

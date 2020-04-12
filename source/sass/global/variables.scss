@@ -1,18 +1,8 @@
-$mobile-width:320px;
-$bg-color: #81b3d2;
+$font-family: "PT Sans", "Arial", sans-serif;
+$font-size: 14px;
 $font-color: #ffffff;
-$feature-color:#eeeeee;
-@mixin font-bold {
-    font-family:'PT Sans';
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
-@mixin font-norm {
-    font-family:'PT Sans';
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    line-height: 1.5;
-}
+$font-weight: 400;
+$mobile-width: 320px;
+$bg-color: #81b3d2;
+$feature-color: #eeeeee;
+$padding-mobile: 20px;
