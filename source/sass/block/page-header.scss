@@ -1,0 +1,56 @@
+.page-header {
+
+}
+.page-header__main-nav {
+
+
+}
+.main-nav__toggle {
+    display: block;
+    float: right;
+    position: relative;
+}
+.main-nav__toggle-close {
+    display: block;
+    float: right;
+    position: relative;
+}
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color;
+    text-decoration: none;
+    list-style-type: none;
+    @include font-bold;
+
+}
+.main-nav__item {
+    margin:0;
+}
+.main-nav__link {
+    white-space: nowrap;
+    display: block;
+    color: $font-color;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #9ac2db #000 #678fa8 ;
+    text-align: center;
+    padding: 22px 123px;
+    background-color: $bg-color;
+}
+
+
+
+.page-header__logo {
+    display: inline-block;
+    background-color: #ffffff;
+    height: 60px;
+    position: relative;
+
+
+}
+.page-header__logo img {
+
+}
+
