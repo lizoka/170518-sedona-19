@@ -1,0 +1,13 @@
+.map {
+  @include style-reset;
+}
+
+.map__map {
+  border: none;
+  width: 100%;
+  background-color: #d7e8f0;
+  background-image: url("/img/bg-map-mobile@1x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,6 +1,6 @@
-.intro {
+.intro-small {
   @include style-reset;
-  height: 385px;
+  height: 163px;
   background-color: #d7e8f0;
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-size: cover;
@@ -8,8 +8,8 @@
   background-position: center;
 }
 
-.intro_img-text {
+.intro-small_img-text {
   display: block;
   width: 100%;
-  padding: 90px 20px;
+  padding: 50px 20px 65px 20px;
 }
