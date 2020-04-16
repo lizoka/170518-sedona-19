@@ -1,15 +1,16 @@
 .intro {
   @include style-reset;
-  height: 385px;
+
+  min-height: 385px;
   background-color: #d7e8f0;
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 90px 20px;
 }
 
-.intro_img-text {
+.intro_img {
   display: block;
   width: 100%;
-  padding: 90px 20px;
 }

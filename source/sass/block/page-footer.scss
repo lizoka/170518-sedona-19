@@ -1,5 +1,6 @@
 .page-footer {
   background-color: #ffffff;
+  padding: 0 20px;
 }
 
 .page-footer__hashtag {
@@ -9,7 +10,7 @@
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  margin: 43px 0;
+  margin: 0 auto 40px;
 }
 
 .page-footer__social {
@@ -17,47 +18,17 @@
   display: flex;
   justify-content: center;
   padding: 0;
-}
-
-.social__item {
-  height: 50px;
-  width: 50px;
-  margin: 0 4px;
-  background-color: $bg-color;
-}
-
-.social__link {
-  @include style-reset;
-  display: inline-block;
-  margin: 10px 10px;
-  text-align: center;
-}
-
-.social__link::before {
-  display: inline-block;
-  width: 32px;
-  margin: auto;
-  vertical-align: -50%;
-}
-
-[href*="facebook.com"]::before {
-  content: url("/img/icon-facebook.svg");
-}
-
-[href*="twitter.com"]::before {
-  content: url("/img/icon-twitter.svg");
-}
-
-[href*="youtube.com"]::before {
-  content: url("/img/icon-youtube.svg");
+  margin: 0 auto 40px;
 }
 
 .page-footer__copyright {
+  display: flex;
+  align-items: center;
   font-family: $font-family;
   font-size: 21px;
   color: #000000;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-  margin: 43px 0 25px 0;
+  margin: 0 auto 30px;
 }

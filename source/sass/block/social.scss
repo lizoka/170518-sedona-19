@@ -1,0 +1,20 @@
+.social__item {
+  height: 50px;
+  width: 50px;
+  margin: 0 4px;
+  background-color: $bg-color;
+}
+
+.social__link {
+  @include style-reset;
+  display: inline-block;
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.social__link::before {
+  display: inline-block;
+  width: 32px;
+  margin: auto;
+  vertical-align: -50%;
+}
