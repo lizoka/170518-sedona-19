@@ -1,0 +1,135 @@
+.fback-form {
+  @include style-reset;
+
+  font-family: $font-family;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.fback-form__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.fback-form__group h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 27px;
+}
+
+.fback-form__group--name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.fback-form__group--name input {
+  font-weight: 700;
+  font-family: $font-family;
+  font-size: 18px;
+  color: #000000;
+  border: none;
+  background: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto 10px;
+}
+
+/**.feedback-form-group_contact {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-form-group_contact h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 27px;
+}
+
+.feedback-form-group_contact input {
+  font-weight: 700;
+  font-family: $font-family;
+  font-size: 18px;
+  color: #000000;
+  border: none;
+  background: #f2f2f2;
+  padding: 20px;
+  margin: 16px 0 24px 0;
+}
+
+.feedback-form-group_impression {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-form-group_impression h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.feedback-form-group_impression input {
+  width: 60px;
+  height: 60px;
+}
+
+.feedback-form-group_impression label {
+  text-transform: none;
+}
+
+.feedback-form-group_checkbox {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-form-group_checkbox h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  padding: 23px 0 26px 0;
+}
+
+.feedback-form-group_checkbox input {
+  width: 60px;
+  height: 60px;
+}
+
+.feedback-form-group_checkbox label {
+  text-transform: none;
+}
+
+.feedback-form-group_message {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.feedback-form-group_message label {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  padding: 27px 0;
+}
+
+.feedback-form-group_message textarea {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  padding: 20px 20px;
+  margin-bottom: 50px;
+  border: none;
+}**/
