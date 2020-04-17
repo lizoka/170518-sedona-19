@@ -1,4 +1,4 @@
-.fback-form {
+.feedback-form {
   @include style-reset;
 
   font-family: $font-family;
@@ -10,25 +10,25 @@
   padding-top: 20px;
 }
 
-.fback-form__group {
+.feedback-form__group {
   display: flex;
   flex-direction: column;
 }
 
-.fback-form__group h2 {
+.feedback-form__group h2 {
   font-size: 18px;
   text-align: center;
   margin: 0 auto 27px;
 }
 
-.fback-form__group--name {
+.feedback-form__group--name {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
 
-.fback-form__group--name input {
+.feedback-form__group--name input {
   font-weight: 700;
   font-family: $font-family;
   font-size: 18px;
