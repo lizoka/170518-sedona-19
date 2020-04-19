@@ -5,7 +5,7 @@
 }
 
 .media__header {
-  width: 100%;
+  width: 320px;
   display: flex;
   flex-direction: column;
   font-family: $font-family;
@@ -15,6 +15,7 @@
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
 }
 
 .media__title {
