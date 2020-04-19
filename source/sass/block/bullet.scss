@@ -1,0 +1,18 @@
+.features__bullet {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px 35px 44px;
+}
+
+.bullet__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26pt;
+  margin: 0;
+}
+
+.bullet__text {
+  color: $font-color-grey;
+  margin: 0;
+  padding: 0;
+}

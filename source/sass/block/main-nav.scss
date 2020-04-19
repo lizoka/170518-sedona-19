@@ -1,6 +1,46 @@
 .main-nav {
   position: relative;
   width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 768px;
+    height: 57px;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    color: black;
+  }
+
+  .main-nav__item {
+    width: 20%;
+    margin: 0;
+  }
+
+  .main-nav__link {
+    margin: 0;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 1200px;
+    height: 57px;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    border: none;
+  }
 }
 
 .main-nav__toggle {
@@ -16,16 +56,12 @@
 .main-nav__list {
   @include list-reset;
 
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: $bg-color;
 }
 
 .main-nav__item {
   @include style-reset;
 
-  width: 100%;
   border-bottom: 1px solid #678fa8;
 
   &:last-child {
@@ -42,7 +78,6 @@
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 10px $padding-mobile;
 }
 
 .main-nav__item + .main-nav__item {

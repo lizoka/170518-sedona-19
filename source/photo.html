@@ -7,27 +7,23 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <header class="page-header">
   <nav class="page-header__main-nav main-nav">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
     </button>
     <ul class="main-nav__list">
-      <li class="main-nav__item ">
+      <li class="main-nav__item">
         <a class="main-nav__link" href="index.html">Главная</a>
       </li>
-      <li class="main-nav__item ">
-        <a class="main-nav__link">Фото и видео
-        </a>
+      <li class="main-nav__item">
+        <a class="main-nav__link">Фото и видео</a>
       </li>
-      <li class="main-nav__item ">
-        <a class="main-nav__link" href="form.html">Форма отзыва
-        </a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="form.html">Форма отзыва</a>
       </li>
-      <li class="main-nav__item ">
-        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy
-        </a>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
       </li>
     </ul>
   </nav>
@@ -37,103 +33,109 @@
 </header>
 
 <main>
-    <section class="intro-small">
-        <h1 class="visually-hidden">Sedona</h1>
-        <img class="intro-small_pic" src="/img/text-sedona.svg" width="280" height="210" alt="Интро текст">
-    </section>
-
-<section class="inspiration">
-<h2 class="visually-hidden">Фото и видео</h2>
-<div class="inspiration__intro">
-<p class="inspiration__title">Фото и видео</p>
-<p class="inspiration__info">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+<div class="intro-small">
+  <img class="intro-small_pic" src="/img/text-sedona.svg" width="280" height="210" alt="Интро текст">
 </div>
 
-
-<ul class="inspiration_list">
-<li class="inspiration__item">
-<img class="inspiration__photo" src="/img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото">
-<p class="inspiration__header">Неродные просторы</p>
-<p class="inspiration__athour">Автор фото: Борис</p>
-<div class="inspiration__like">
-<p class="inspiration__number">1350</p>
-</div>
-</li>
-<li class="inspiration__item">
-<img class="inspiration__photo" src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото">
-<p class="inspiration__header">Местная растительность </p>
-<p class="inspiration__athour">Автор фото: Сергей </p>
-<div class="inspiration__like">
-<p class="inspiration__number">143</p>
-</div>
-</li>
-<li class="inspiration__item">
-<img class="inspiration__photo" src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото">
-<p class="inspiration__header">Дорога на север</p>
-<p class="inspiration__athour">Автор фото: Петр</p>
-<div class="inspiration__like">
-<p class="inspiration__number">96</p>
-</div>
-</li>
-<li class="inspiration__item">
-<img class="inspiration__photo" src="/img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото">
-<p class="inspiration__header">Мост дьявола</p>
-<p class="inspiration__athour">Автор фото: Антон</p>
-<div class="inspiration__like">
-<p class="inspiration__number">254</p>
-</div>
-</li>
-</ul>
+<section class="media">
+  <div class="media__header">
+    <h1 class="visually-hidden">Фото и видео</h1>
+    <p class="media__title">Фото и видео</p>
+    <p class="media__info">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+  </div>
+  <div class="media__content">
+    <ul class="gallery">
+      <li class="gallery__item gallery__item--big">
+        <img class="gallery__photo" src="/img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото">
+        <p class="gallery__header">Неродные просторы</p>
+        <p class="gallery__athour">Автор фото: Борис</p>
+        <div class="gallery__like">
+          <p class="gallery__number">1350</p>
+        </div>
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__photo" src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото">
+        <p class="gallery__header">Местная растительность</p>
+        <p class="gallery__athour">Автор фото: Сергей</p>
+        <div class="gallery__like">
+          <p class="gallery__number">143</p>
+        </div>
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__photo" src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото">
+        <p class="gallery__header">Дорога на север</p>
+        <p class="gallery__athour">Автор фото: Петр</p>
+        <div class="gallery__like">
+          <p class="gallery__number">96</p>
+        </div>
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__photo" src="/img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото">
+        <p class="gallery__header">Мост дьявола</p>
+        <p class="gallery__athour">Автор фото: Антон</p>
+        <div class="gallery__like">
+          <p class="gallery__number">254</p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>
 
-  <section class="inspiration-video">
-    <h2 class="visually-hidden">Видео</h2>
-        <p class="inspiration-video__title">Все еще сомневаетесь?</p>
-        <p class="inspiration-video__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="inspiration-video__bg" width="320" height="270" src="img/video-mobile@1x.jpg" alt="видео">
-  </section>
+<section class="media">
+  <div class="media__header">
+    <h1 class="visually-hidden">Видео</h1>
+    <p class="media__title">Все еще сомневаетесь?</p>
+    <p class="media__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+  </div>
+  <div class="media__content">
+    <div class="media__content-video video">
+      <img class="video__bg" width="320" height="270" src="img/video-mobile@1x.jpg" alt="видео">
+    </div>
+  </div>
+</section>
 </main>
+
 <footer class="page-footer">
   <p class="page-footer__hashtag">#Visitsedona</p>
   <ul class="page-footer__social social">
-      <li class="social__item">
-        <a class="social__link" href="#nowhere" aria-label="Это наш Фейсбук">
+    <li class="social__item">
+      <a class="social__link" href="#nowhere" aria-label="Это наш Фейсбук">
         <object
           type="image/svg+xml"
           data="/img/icon-facebook.svg">
-          <img src="/img/icon-facebook.png">
-          </object>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#nowhere" aria-label="Это наш Твиттер">
+          <img src="/img/icon-facebook.png" alt="Фейсбук">
+        </object>
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="#nowhere" aria-label="Это наш Твиттер">
         <object
           type="image/svg+xml"
           data="/img/icon-twitter.svg">
-          <img src="/img/icon-twitter.png">
-          </object>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#nowhere" aria-label="Это наш Ютуб">
+          <img src="/img/icon-twitter.png" alt="Твиттер">
+        </object>
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="#nowhere" aria-label="Это наш Ютуб">
         <object
           type="image/svg+xml"
           data="/img/icon-youtube.svg">
-          <img src="/img/icon-youtube.png">
-          </object>
-        </a>
-      </li>
-    </ul>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-        <object
-          type="image/svg+xml"
-          data="/img/logo-htmlacademy.svg">
-          <img src="/img/logo-htmlacademy.png">
-          </object>
+          <img src="/img/icon-youtube.png" alt="Ютюб">
+        </object>
       </a>
-    </div>
+    </li>
+  </ul>
+  <div class="page-footer__copyright copyright">
+    <p class="copyright__text">Разработано:</p>
+    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+      <object
+        type="image/svg+xml"
+        data="/img/logo-htmlacademy.svg">
+        <img src="/img/logo-htmlacademy.png" alt="Академия">
+      </object>
+    </a>
+  </div>
 </footer>
 </body>
 </html>
