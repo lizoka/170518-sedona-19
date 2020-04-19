@@ -9,3 +9,28 @@
   width: 104px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header__logo {
+    display: inline;
+    height: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+    height: 57px;
+    margin: 0;
+  }
+
+  .page-header__logo {
+    display: inline;
+    height: 0;
+  }
+}
