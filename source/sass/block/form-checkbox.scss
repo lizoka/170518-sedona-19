@@ -1,3 +1,38 @@
 .form-checkbox {
-  color: #000000;
+  label {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &::before {
+    content: "";
+
+    display: block;
+    box-sizing: border-box;
+    width: 58px;
+    height: 58px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+}
+
+.form-checkbox:checked + label::before {
+  background-image: url("/img/icon-tick.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .form-checkbox {
+    width: 220px;
+  }
+
+  .form-checkbox__input {
+    list-style: none;
+  }
 }

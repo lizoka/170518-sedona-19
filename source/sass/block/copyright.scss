@@ -1,8 +1,39 @@
+.copyright {
+  position: relative;
+  font-size: 14px;
+}
+
 .copyright__text {
   font-weight: 400;
-  margin: 0 auto;
+  margin: 0 10px;
+  font-size: 14px;
 }
 
 .copyright__link {
-  margin-right: 70px;
+  position: absolute;
+  right: 20px;
+  top: -5px;
+  padding: 0;
+  z-index: 1;
+  width: 41px;
+  height: 40px;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin: 18px 40px 0 0;
+  }
+
+  .copyright__link {
+    right: 0;
+    top: 12px;
+  }
 }

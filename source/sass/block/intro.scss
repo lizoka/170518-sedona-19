@@ -11,6 +11,19 @@
 }
 
 .intro_img {
-  display: block;
   width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-color: #d7e8f0;
+    background-image: url("/img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
 }

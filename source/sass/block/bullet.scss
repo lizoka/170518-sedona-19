@@ -16,3 +16,27 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .features__bullet {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .bullet {
+    width: 180px;
+    text-align: center;
+  }
+
+  .bullet__title {
+    margin-bottom: 20px;
+  }
+
+  .bullet__text {
+    display: block;
+    margin-bottom: 60px;
+  }
+}

@@ -2,6 +2,7 @@
   @include style-reset;
 
   color: #000000;
+
 }
 
 .media__header {
@@ -31,4 +32,21 @@
   line-height: 21pt;
   font-size: $font-size;
   margin: 0 auto 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .media__header {
+    width: 460px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .media__title {
+    width: 460px;
+  }
+
+  .media__info {
+    width: 430px;
+  }
 }

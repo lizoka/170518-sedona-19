@@ -1,20 +1,33 @@
 .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 50px;
   margin: 0 4px;
   background-color: $bg-color;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
 }
 
 .social__link {
   @include style-reset;
   display: inline-block;
-  margin: 10px 10px;
   text-align: center;
-}
+  color: #ffffff;
 
-.social__link::before {
-  display: inline-block;
-  width: 32px;
-  margin: auto;
-  vertical-align: -50%;
+  &:hover svg {
+    fill: #ffffff;
+  }
+
+  &:active svg {
+    fill: #88b6d1;
+  }
 }

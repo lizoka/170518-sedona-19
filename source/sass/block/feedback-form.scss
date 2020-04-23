@@ -1,3 +1,135 @@
 .feedback-form {
+
   color: #000000;
+}
+
+.feedback-form__group {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px 6px;
+  border-top: 1px solid black;
+
+  &--radio {
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+}
+
+.feedback-form__title {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+
+  margin: 0 auto;
+  padding-top: 18px;
+}
+
+.feedback-form__field {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.feedback-form__textarea {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  border: none;
+  resize: none;
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 160px;
+  margin-top: 16px;
+  margin-bottom: 48px;
+  padding-top: 17px;
+  padding-left: 21px;
+}
+
+.feedback-form__bottom {
+  padding: 0 $padding-mobile;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feedback-form__group {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: none;
+  }
+
+  .feedback-form__group--name {
+    width: 50%;
+    margin: 0;
+    order: 2;
+  }
+
+  .feedback-form__group--tel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    order: 3;
+  }
+
+  .feedback-form__group--radio {
+    order: 1;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .feedback-form__group--checkbox {
+    padding-bottom: 44px;
+    order: 4;
+  }
+
+  .feedback-form__checkbox-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 458px;
+    margin: 0 auto;
+  }
+
+  .feedback-form__group--textarea {
+    order: 5;
+    padding: 60px 0 0;
+  }
+
+  .feedback-form__bottom {
+    width: 648px;
+    display: flex;
+    justify-content: space-between;
+    order: 6;
+    padding: 0;
+  }
+
+  .feedback-form__btn {
+    width: 324px;
+    padding: 0;
+  }
+
+  .feedback-form__sub {
+    font-size: 14px;
+    color: #333333;
+  }
+
+  .feedback-form__title {
+    margin-bottom: 21px;
+    padding: 16px 0 0 0;
+
+    font-weight: 700;
+  }
 }
