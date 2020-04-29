@@ -58,3 +58,19 @@
     margin-bottom: 70px;
   }
 }
+
+@media (min-width: $desktop-width){
+  .feedback {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+
+  }
+
+  .feedback__header {
+  margin: 100px auto 0;
+  }
+}
+

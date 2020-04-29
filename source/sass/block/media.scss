@@ -50,3 +50,18 @@
     width: 430px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .media__header {
+    padding: 100px 0 70px ;
+  }
+
+  .media__title {
+    font-size: 21px;
+  }
+
+  .media__info {
+    margin: 0 0 30px;
+  }
+
+}

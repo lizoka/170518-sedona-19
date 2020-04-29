@@ -25,3 +25,9 @@
     justify-content: center;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .intro-small {
+    min-height: 305px;
+  }
+}

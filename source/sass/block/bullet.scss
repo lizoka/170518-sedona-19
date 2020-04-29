@@ -27,7 +27,7 @@
   }
 
   .bullet {
-    width: 180px;
+    min-width: 180px;
     text-align: center;
   }
 
@@ -38,5 +38,26 @@
   .bullet__text {
     display: block;
     margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bullet {
+    max-height: 270px;
+    margin: 0;
+  }
+
+  .bullet__icon svg {
+    color: #7aadcb;
+  }
+
+  .bullet__title {
+    font-size: 21px;
+    margin: 25px 0;
+  }
+
+  .bullet__text {
+    max-width: 270px;
+    margin-bottom: 70px;
   }
 }

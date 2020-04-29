@@ -81,3 +81,40 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-field {
+    width: 480px ;
+    padding: 0;
+
+    flex-direction: row;
+  }
+
+  .form-field__label {
+    margin: 0;
+    padding: 0 20px 0 0;
+  }
+
+  .form-field__input {
+
+  }
+
+  .form-field--tel,
+  .form-field--email {
+
+    label {
+      margin: 0;
+      padding: 0 20px 0 0;
+
+    }
+  }
+
+  .form-field--email,
+  .form-field--tel {
+    margin: 0;
+  }
+
+  .form-field--tel {
+
+  }
+}

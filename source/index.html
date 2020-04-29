@@ -45,7 +45,11 @@
     </button>
   </nav>
   <a class="page-header__logo">
-    <img src="/img/logo-sedona-mobile.svg" width="100" height="85" alt="Седона">
+    <picture>
+      <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+      <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 768px)">
+      <img src="img/logo-sedona-mobile.svg" width="188" height="96" alt="Изображение городка Седона">
+    </picture>
   </a>
 </header>
 
@@ -69,27 +73,41 @@
           <p class="feature-card__number feature-card__number--big">— №1 —</p>
           <p class="feature-card__text feature-card__text--big">Седона не атракцион для туристов, там течет своя жизнь</p>
         </div>
-
-        <img class="features__photo" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Фото.Настоящий городок">
-
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp 1x, img/main-city-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp 1x, img/main-city-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-city-mobile@1x.webp 1x, img/main-city-mobile@2x.webp 2x">
+          <source srcset="img/main-city-desktop@1x.png 1x, img/main-city-desktop@2x.png 2x" media="(min-width: 1200px)">
+          <source srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="features__photo" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение городка Седона">
+        </picture>
       </li>
     </ul>
 
     <ul class="features__bullet-list">
       <li class="features__bullet bullet">
         <div class="bullet">
+          <svg class="bullet-icon--house" width="74" height="72">
+            <use xlink:href="img/sprites/sprite.svg#icon-house"></use>
+          </svg>
           <p class="bullet__title">Жилье</p>
           <p class="bullet__text">Рекомендуем пожить в настоящем отеле, все как в кино!</p>
         </div>
       </li>
       <li class="features__bullet bullet">
         <div class="bullet">
+          <svg class="bullet-icon--souvenirs" width="74" height="72">
+            <use xlink:href="img/sprites/sprite.svg#icon-souvenirs"></use>
+          </svg>
           <p class="bullet__title">Сувениры</p>
           <p class="bullet__text">Не только китайского, но и местного производства!</p>
         </div>
       </li>
       <li class="features__bullet bullet">
         <div class="bullet">
+          <svg class="bullet-icon--food" width="74" height="72">
+            <use xlink:href="img/sprites/sprite.svg#icon-food"></use>
+          </svg>
           <p class="bullet__title">Еда</p>
           <p class="bullet__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
@@ -97,13 +115,20 @@
     </ul>
 
     <ul class="features__list ">
-      <li class="features__item features__item--big">
+      <li class="features__item features__item--big features__item--reverse">
         <div class="feature-card feature-card--big">
           <p class="feature-card__name feature-card__name--big">Там есть мост дьявола</p>
           <p class="feature-card__number feature-card__number--big">— №2 —</p>
           <p class="feature-card__text feature-card__text--big">Да, по нему можно пройтись, если вы осмелитесь конечно</p>
         </div>
-        <img class="features__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Фото.Мост дьявола">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp 1x, img/main-bridge-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp 1x, img/main-bridge-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp 1x, img/main-bridge-mobile@2x.webp 2x">
+          <source srcset="img/main-bridge-desktop@1x.png 1x, img/main-bridge-desktop@2x.png 2x" media="(min-width: 1200px)">
+          <source srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="features__photo" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Изображение моста дьявола">
+        </picture>
       </li>
       <li class="features__item">
         <div class="feature-card">

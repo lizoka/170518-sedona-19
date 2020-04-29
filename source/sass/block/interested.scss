@@ -35,3 +35,9 @@
     margin: 0 auto 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .interested {
+    margin-bottom: 60px;
+  }
+}
