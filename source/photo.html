@@ -11,6 +11,9 @@
   <nav class="page-header__main-nav main-nav">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve" fill="#fff">
+              <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+            </svg>
     </button>
     <ul class="main-nav__list">
       <li class="main-nav__item">
@@ -46,35 +49,43 @@
       <ul class="gallery">
         <li class="gallery__item gallery__item--big">
             <img class="gallery__photo" src="/img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фото">
-            <div class="gallery__info">
-              <h2 class="gallery__item-title">Неродные просторы</h2>
-              <p class="gallery__author">Автор фото: Борис</p>
+            <div class="gallery__info gallery__info--big">
+              <div class="gallery_info-wrapper">
+                <h2 class="gallery__item-title">Неродные просторы</h2>
+                <p class="gallery__author">Автор фото: Борис</p>
+            </div>
               <p class="gallery__like">1350</p>
             </div>
         </li>
         <li class="gallery__item">
             <img class="gallery__photo" src="/img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фото">
           <div class="gallery__info">
-            <h2 class="gallery__item-title">Местная растительность</h2>
-            <p class="gallery__author">Автор фото: Сергей</p>
+            <div class="gallery_info-wrapper">
+              <h2 class="gallery__item-title">Местная растительность</h2>
+              <p class="gallery__author">Автор фото: Сергей</p>
+          </div>
             <p class="gallery__like">143</p>
           </div>
         </li>
         <li class="gallery__item">
             <img class="gallery__photo" src="/img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фото">
             <div class="gallery__info">
-              <h2 class="gallery__item-title">Дорога на север</h2>
-              <p class="gallery__author">Автор фото: Петр</p>
+              <div class="gallery_info-wrapper">
+                <h2 class="gallery__item-title">Дорога на север</h2>
+                <p class="gallery__author">Автор фото: Петр</p>
+            </div>
               <p class="gallery__like">96</p>
             </div>
         </li>
         <li class="gallery__item">
             <img class="gallery__photo" src="/img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фото">
-            <div class="gallery__info">
-              <h2 class="gallery__item-title">Мост дьявола</h2>
-              <p class="gallery__author">Автор фото: Антон</p>
+              <div class="gallery__info">
+               <div class="gallery__info-wrapper">
+                <h2 class="gallery__item-title">Мост дьявола</h2>
+                <p class="gallery__author">Автор фото: Антон</p>
+               </div>
               <p class="gallery__like">254</p>
-            </div>
+              </div>
         </li>
       </ul>
     </div>
@@ -86,9 +97,29 @@
       <p class="media__title">Все еще сомневаетесь?</p>
       <p class="media__info">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
     </div>
-    <div class="media__content">
-      <div class="media__content-video video">
-        <img class="video__bg" width="320" height="270" src="img/video-mobile@1x.jpg" alt="видео">
+    <div class="media__content video">
+      <div class="video__screen">
+        <!-- <video width="320" height="201" preload="auto">
+            <source src="video/sedona.mp4" type="video/mp4">
+        </video> -->
+      </div>
+      <div class="video__controls">
+        <button class="video__button">
+          <svg class="video__icon" width="16" height="20">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-replay"></use>
+          </svg>
+        </button>
+        <div class="video__progress-bar"></div>
+        <button class="video__button">
+          <svg class="video__icon" width="32" height="20">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-subtitles"></use>
+          </svg>
+        </button>
+        <button class="video__button">
+          <svg class="video__icon" width="20" height="20">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-video-fullscreen"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </section>

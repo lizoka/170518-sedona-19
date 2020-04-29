@@ -16,3 +16,48 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .features__bullet {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .bullet {
+    min-width: 180px;
+    text-align: center;
+  }
+
+  .bullet__title {
+    margin-bottom: 20px;
+  }
+
+  .bullet__text {
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bullet {
+    max-height: 270px;
+    margin: 0;
+  }
+
+  .bullet__icon svg {
+    color: #7aadcb;
+  }
+
+  .bullet__title {
+    font-size: 21px;
+    margin: 25px 0;
+  }
+
+  .bullet__text {
+    max-width: 270px;
+    margin-bottom: 70px;
+  }
+}

@@ -1,6 +1,6 @@
 .intro-small {
   @include style-reset;
-  height: 163px;
+  min-height: 163px;
   background-color: #d7e8f0;
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-size: cover;
@@ -12,4 +12,22 @@
 .intro-small_pic {
   display: block;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .intro-small {
+    background-color: #d7e8f0;
+    background-image: url("/img/bg-back-mobile@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro-small {
+    min-height: 305px;
+  }
 }
