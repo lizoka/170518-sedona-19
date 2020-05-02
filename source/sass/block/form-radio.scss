@@ -7,7 +7,6 @@
 .form-radio__label {
   display: flex;
   align-items: center;
-
   font-weight: 700;
   font-size: 18px;
   margin: 0 0 12px 0;
@@ -17,6 +16,7 @@
   appearance: none;
   position: absolute;
 }
+
 .form-radio__box {
   position: absolute;
   width: 58px;
@@ -24,7 +24,7 @@
   background-color: #f2f2f2;
   background-image: none;
   border-radius: 50%;
-  margin-left:  -70px;
+  margin-left: -70px;
 
   &:hover {
     background-color: #e5e5e5;
@@ -33,7 +33,6 @@
   &:active {
     background-color: #d5d5d5;
   }
-
 }
 
 .form-radio__input:checked + .form-radio__box {
@@ -41,11 +40,7 @@
   border: 18px solid #f2f2f2;
   background-repeat: no-repeat;
   background-position: center;
-
-
 }
-
-
 
 @media (min-width: $tablet-width) {
   .form-radio {
