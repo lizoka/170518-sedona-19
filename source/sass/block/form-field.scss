@@ -15,15 +15,13 @@
 
   &::after {
     content: "";
-
     position: absolute;
     right: 0;
     bottom: 0;
-
     display: block;
     width: 58px;
     height: 58px;
-    background-color: #f2f2f2;;
+    background-color: #f2f2f2;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -58,7 +56,6 @@
   width: 100%;
   flex-grow: 1;
   height: 58px;
-
   font-size: 18px;
   line-height: 26px;
   color: black;
@@ -66,7 +63,6 @@
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
-
   padding: 0 0 0 22px;
   margin: 0;
 }
@@ -84,9 +80,8 @@
 
 @media (min-width: $desktop-width) {
   .form-field {
-    width: 480px ;
+    width: 480px;
     padding: 0;
-
     flex-direction: row;
   }
 
@@ -95,26 +90,11 @@
     padding: 0 20px 0 0;
   }
 
-  .form-field__input {
-
-  }
-
   .form-field--tel,
   .form-field--email {
-
     label {
       margin: 0;
       padding: 0 20px 0 0;
-
     }
-  }
-
-  .form-field--email,
-  .form-field--tel {
-    margin: 0;
-  }
-
-  .form-field--tel {
-
   }
 }

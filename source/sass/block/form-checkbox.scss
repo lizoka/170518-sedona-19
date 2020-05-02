@@ -5,18 +5,18 @@
 }
 
 .form-checkbox__label {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
 
-    font-weight: 700;
-    font-size: 18px;
-
-  }
 .form-checkbox__input {
   appearance: none;
   position: absolute;
 }
+
 .form-checkbox__box {
   position: absolute;
   width: 58px;
@@ -24,7 +24,7 @@
   background-color: #f2f2f2;
   background-image: none;
   border-radius: 10px;
- margin-left:  -70px;
+  margin-left: -70px;
 
   &:hover {
     background-color: #e5e5e5;
@@ -33,7 +33,6 @@
   &:active {
     background-color: #d5d5d5;
   }
-
 }
 
 .form-checkbox__input:checked + .form-checkbox__box {
@@ -50,7 +49,6 @@
     fill: #a4a4a4;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .form-checkbox {

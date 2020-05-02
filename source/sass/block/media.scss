@@ -2,7 +2,6 @@
   @include style-reset;
 
   color: #000000;
-
 }
 
 .media__header {
@@ -53,7 +52,7 @@
 
 @media (min-width: $desktop-width) {
   .media__header {
-    padding: 100px 0 70px ;
+    padding: 100px 0 70px;
   }
 
   .media__title {
@@ -63,5 +62,4 @@
   .media__info {
     margin: 0 0 30px;
   }
-
 }
