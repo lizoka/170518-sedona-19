@@ -18,6 +18,21 @@
   margin: 0 auto;
 }
 
+.media__header--photo {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -26px;
+    right: calc(50% - 160px);
+    width: 320px;
+    height: 27px;
+    background-image: url("/img/bg-intro-triangle-mobile.svg");
+    background-size: 100%;
+  }
+}
+
 .media__title {
   color: #000000;
   font-weight: 700;
@@ -39,27 +54,66 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    padding: 70px 0 0;
+  }
+
+  .media__header--photo {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -57px;
+      right: 0;
+      left: -154px;
+      width: 770px;
+      height: 70px;
+      background-image: url("/img/bg-intro-triangle-tablet.svg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
   }
 
   .media__title {
     width: 460px;
+    font-size: 30px;
+    margin-bottom: 30px;
   }
 
   .media__info {
     width: 430px;
+    margin: 0 0 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .media__header {
-    padding: 100px 0 70px;
+    padding: 105px 0 0;
+  }
+
+  .media__header--photo {
+    position: relative;
+
+    &::before {
+      top: -57px;
+      right: 0;
+      left: -374px;
+      height: 70px;
+      width: 1210px;
+      background-image: url("/img/bg-intro-triangle-desktop.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   .media__title {
-    font-size: 21px;
+    font-size: 30px;
   }
 
   .media__info {
-    margin: 0 0 30px;
+    margin: 0 0 75px;
+  }
+
+  .media__header--video {
+    padding-top: 60px;
   }
 }

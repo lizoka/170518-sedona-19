@@ -1,7 +1,11 @@
 .form-checkbox {
   width: 100%;
-  margin: 0 0 65px;
-  padding-left: 70px;
+  margin: 0 0 60px;
+  padding-left: 75px;
+
+  &:last-child {
+    margin-bottom: 40px;
+  }
 }
 
 .form-checkbox__label {
@@ -24,7 +28,7 @@
   background-color: #f2f2f2;
   background-image: none;
   border-radius: 10px;
-  margin-left: -70px;
+  margin-left: -75px;
 
   &:hover {
     background-color: #e5e5e5;

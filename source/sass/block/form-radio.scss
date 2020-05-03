@@ -9,7 +9,7 @@
   align-items: center;
   font-weight: 700;
   font-size: 18px;
-  margin: 0 0 12px 0;
+  margin: 0;
 }
 
 .form-radio__input {
@@ -44,6 +44,6 @@
 
 @media (min-width: $tablet-width) {
   .form-radio {
-    padding-bottom: 25px;
+    margin: 25px 0 25px;
   }
 }

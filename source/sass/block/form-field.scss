@@ -1,7 +1,3 @@
-.form-field {
-  padding: 0 20px 0 20px;
-}
-
 .form-field--tel,
 .form-field--email {
   position: relative;
@@ -21,7 +17,7 @@
     display: block;
     width: 58px;
     height: 58px;
-    background-color: #f2f2f2;
+    background-color: #e6e6e6;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -92,9 +88,16 @@
 
   .form-field--tel,
   .form-field--email {
+    width: 400px;
+    margin: 0;
+
     label {
       margin: 0;
       padding: 0 20px 0 0;
     }
+  }
+
+  .form-field--email {
+    width: 480px;
   }
 }
