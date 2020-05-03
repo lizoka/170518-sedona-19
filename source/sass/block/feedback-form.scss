@@ -7,13 +7,8 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0 20px 6px;
-  border-top: 1px solid black;
-
-  &--radio {
-    padding-top: 20px;
-    padding-bottom: 14px;
-  }
+  padding: 20px 20px 0;
+  border-top: 2px solid #e5e5e5;
 }
 
 .feedback-form__title {
@@ -23,10 +18,7 @@
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
-
-
-  margin: 0 auto 40px;
-  padding-top: 18px;
+  margin: 0 auto 30px;
 }
 
 .feedback-form__field {
@@ -46,15 +38,17 @@
   background-color: #f2f2f2;
   width: 100%;
   height: 160px;
-  margin-top: 16px;
   margin-bottom: 48px;
-  padding-top: 17px;
-  padding-left: 21px;
+  padding: 20px 15px;
 }
 
 .feedback-form__bottom {
   padding: 0 $padding-mobile;
   margin: 0;
+}
+
+.feedback-form__sub {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,22 +57,54 @@
     flex-wrap: wrap;
   }
 
+  .feedback-form__field {
+    margin: 0;
+  }
+
   .feedback-form__title {
     font-size: 21px;
     line-height: 25px;
     display: block;
-    margin: 0 auto 21px;
-    padding: 16px 0 0 0;
+    text-align: center;
+    margin: 0 auto 55px;
+    padding: 0 25px;
     font-weight: 700;
+    position: relative;
+    /**max-width: 330px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 130px;
+      right: 343px;
+      height: 3px;
+      margin: 11px;
+      background-color: #d6d6d6;
+    }
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 379px;
+        width: 130px;
+        height: 3px;
+        margin: - 14px -20px;
+        background-color: #d6d6d6;
+      }**/
   }
 
   .feedback-form__group {
     display: flex;
     flex-wrap: wrap;
     position: static;
-    border-top: 1px solid #e6e6e6;
+    border-top: none;
     margin: 0;
     padding: 0;
+  }
+
+  .feedback-form__group--small {
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .feedback-form__group--name {
@@ -86,6 +112,7 @@
     margin: 0;
     padding: 0;
     order: 2;
+    border-top: none;
   }
 
   .feedback-form__group--tel {
@@ -93,6 +120,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     order: 3;
+    margin-top: 70px;
   }
 
   .feedback-form__group--radio {
@@ -100,10 +128,11 @@
     width: 50%;
     margin: 0;
     padding: 0;
+    border-top: none;
   }
 
   .feedback-form__group--checkbox {
-    padding-bottom: 44px;
+    margin-top: 40px;
     order: 4;
   }
 
@@ -131,10 +160,11 @@
 
   .feedback-form__btn {
     width: 324px;
-    padding: 0;
   }
 
   .feedback-form__sub {
+    display: inline;
+    text-transform: uppercase;
     font-size: 14px;
     color: #333333;
   }
@@ -148,17 +178,16 @@
 
   .feedback-form__title {
     width: 100%;
-    padding: 30px 50px;
-    margin: 0 auto;
-    text-align: left;
+    padding: 0;
+    margin: 0 auto 70px;
+    text-align: center;
   }
 
   .feedback-form__group--name {
     flex-direction: column;
-    width: 400px;
     padding: 0;
     border-top: none;
-    margin: 0 0 0 80px;
+    margin: 0;
   }
 
   .feedback-form__group--radio {
@@ -168,7 +197,10 @@
   .feedback-form__group--tel {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0 60px 0;
+  }
+
+  .feedback-form__group--checkbox {
+    padding-top: 50px;
   }
 
   .feedback-form__checkbox-wrapper {
@@ -180,5 +212,9 @@
 
   .feedback-form__group--textarea {
     padding: 0 0 50px;
+  }
+
+  .feedback-form__bottom {
+    width: 960px;
   }
 }
