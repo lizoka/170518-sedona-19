@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
   <title>Sedona</title>
@@ -36,23 +36,21 @@
   </symbol>
 </svg>
 
+<div class="wrapper">
+
 <header class="page-header">
   <nav class="page-header__main-nav main-nav main-nav--opened main-nav--nojs">
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть/закрыть меню</span>
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve" fill="#fff">
-              <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-            </svg>
+      <svg width="22.199px" height="22.199px">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cross"></use>
+      </svg>
     </button>
     <button class="main-nav__menu" type="button">
       <span class="visually-hidden">Меню</span>
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve" fill="#81b3d2">
-                <g>
-                  <rect width="22.928" height="3.964"/>
-                  <rect y="9.009" width="22.928" height="3.964"/>
-                  <rect y="18.018" width="22.928" height="3.964"/>
-                </g>
-              </svg>
+      <svg width="22.928px" height="21.982px">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-menu"></use>
+      </svg>
     </button>
     <ul class="main-nav__list">
       <li class="main-nav__item">
@@ -112,9 +110,11 @@
       </div>
 
       <div class="feedback-form__group feedback-form__group--tel">
-        <p class="feedback-form__title">Контактная информация:</p>
+        <div class="feedback-form__title-wrap">
+          <p class="feedback-form__title feedback__title--long">Контактная информация:</p>
+        </div>
         <div class="feedback-form__field form-field form-field--column form-field--tel">
-          <label class="form-field__label" for="phone">Контактный телефон*:</label>
+          <label class="form-field__label" for="phone"><span class="form-field__info">Контактный</span> телефон*:</label>
           <input type="tel" class="form-field__input" name="phone" id="phone" placeholder="Введите телефон" required>
         </div>
 
@@ -125,7 +125,7 @@
       </div>
 
       <div class="feedback-form__group feedback-form__group--radio feedback-form__group--small">
-        <p class="feedback-form__title">Ваше общее впечатление:</p>
+        <p class="feedback-form__title feedback-form__title--short">Ваше общее впечатление:</p>
         <div class="feedback-form__field form-radio">
           <label class="form-radio__label" for="positive">
             <input type="radio" class="form-radio__input" name="question" value="positive" id="positive" checked>
@@ -147,7 +147,9 @@
       </div>
 
       <div class="feedback-form__group feedback-form__group--checkbox">
-        <p class="feedback-form__title">Посещенные достопримечательности:</p>
+        <div class="feedback-form__title-wrap">
+          <p class="feedback-form__title feedback__title--long">Посещенные достопримечательности:</p>
+        </div>
         <div class="feedback-form__checkbox-wrapper">
           <div class="feedback-form__field form-checkbox">
             <label class="form-checkbox__label" for="dev-tower">
@@ -178,7 +180,9 @@
       </div>
 
       <div class="feedback-form__group feedback-form__group--textarea">
-        <p class="feedback-form__title">Опишите свои эмоции:</p>
+        <div class="feedback-form__title-wrap">
+          <p class="feedback-form__title feedback__title--long">Опишите свои эмоции:</p>
+        </div>
         <textarea name="message" class="feedback-form__textarea" id="message" rows="6" cols="30" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <div class="feedback-form__bottom">
@@ -225,6 +229,7 @@
     </a>
   </div>
 </footer>
+</div>
 <script src="js/navigation.js"></script>
 </body>
 </html>

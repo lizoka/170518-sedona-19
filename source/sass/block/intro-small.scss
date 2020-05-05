@@ -44,7 +44,7 @@
   .intro-small {
     background-color: #d7e8f0;
     background-image: url("/img/bg-back-desktop@1x.jpg");
-    min-height: 300px;
+    min-height: 295px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/bg-back-desktop@2x.jpg");
