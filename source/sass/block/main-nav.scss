@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   background-color: $bg-color;
-  width: $mobile-width;
 }
 
 .main-nav__list {
@@ -89,6 +88,10 @@
   display: none;
 }
 
+.main-nav--closed .main-nav__item + .main-nav__item {
+  border-top: none;
+}
+
 .main-nav--closed .main-nav__item--logo {
   display: inline-block;
 }
@@ -127,7 +130,6 @@
   .main-nav {
     margin: 0;
     background-color: #ffffff;
-    width: $tablet-width;
   }
 
   .main-nav__toggle {
@@ -146,7 +148,7 @@
     color: black;
   }
 
-  .main-nav__items--closed .main-nav__item {
+  .main-nav--closed .main-nav__item {
     display: block;
   }
 
@@ -200,6 +202,10 @@
     width: 20%;
     margin: 0;
     border: none;
+  }
+
+  .main-nav__items--closed .main-nav__item {
+    display: block;
   }
 
   .main-nav__item + .main-nav__item {
