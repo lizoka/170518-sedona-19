@@ -1,7 +1,6 @@
 .features {
   @include style-reset;
 
-  min-height: 2060px;
   width: 100%;
   position: relative;
 
@@ -17,7 +16,6 @@
     background-size: 100%;
   }
 }
-
 
 .features__intro {
   @include style-reset;
@@ -42,27 +40,38 @@
   line-height: 20pt;
   width: 260px;
   font-weight: 700;
-  margin: 0 auto 44px;
+  margin: 0 auto 34px;
 }
 
 .features__info {
   font-size: $font-size;
   line-height: $line-height;
   color: $font-color-grey;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .features__list {
   @include style-reset;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .features__item {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  width: 320px;
   background-color: #eeeeee;
+}
+
+.features__item--big {
+  background-color: #ffffff;
+
+  picture {
+    font-size: 0;
+    line-height: 0;
+  }
 }
 
 .feature-card__info {
@@ -73,7 +82,7 @@
   font-size: 18px;
   text-transform: uppercase;
   color: $font-color-grey;
-  padding: 30px 20px 0;
+  padding: 25px 20px 0;
 }
 
 .feature-card__info::after {
@@ -81,7 +90,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  margin: 25px auto 0;
+  margin: 28px auto 0;
   background-color: #d6d6d6;
 }
 
@@ -90,7 +99,7 @@
   font-size: 18px;
   line-height: 26pt;
   color: #000000;
-  margin: 0 auto 5px;
+  margin: 0 auto;
 }
 
 .feature-card__number {
@@ -113,11 +122,11 @@
   font-family: $font-family;
   text-transform: uppercase;
   background-color: $bg-color;
-  padding: 70px 20px 0 20px;
 
   background-image: url("/img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 50% top;
+  padding: 70px 0 0 0;
 }
 
 .feature-card--second {
@@ -131,21 +140,21 @@
   font-size: 18px;
   line-height: 26pt;
   color: $font-color;
-  margin: 0 auto 10px;
+  margin: 0 auto;
 }
 
 .feature-card__number--big {
   font-size: $font-size;
   line-height: 21pt;
   padding: 0;
-  margin: 0 auto 10px;
+  margin: 0 auto 16px;
 }
 
 .feature-card__text--big {
   text-align: center;
   font-size: $font-size;
   line-height: $line-height;
-  margin: 0 auto 40px;
+  margin: 0 auto 34px;
 }
 
 .features__photo {
@@ -161,7 +170,9 @@
   font-size: $font-size;
   color: #000000;
   text-transform: uppercase;
-  padding: 35px 20px 0;
+  padding: 32px 17px 0;
+  margin: 0 auto;
+  max-width: 320px;
 }
 
 @media (min-width: $tablet-width) {
@@ -181,18 +192,24 @@
     }
   }
 
+  .features__intro {
+    padding: 27px 0 0;
+  }
+
   .features__title {
     width: 460px;
     margin-bottom: 30px;
+    font-size: 21px;
   }
 
   .features__info {
-    margin: 0 auto 40px;
+    margin: 0 auto 53px;
   }
 
   .features__bullet-list {
     flex-direction: row;
     padding: 60px 0 0;
+    max-width: 768px;
   }
 
   .features__list {
@@ -215,7 +232,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 260px;
+    height: 258px;
   }
 
   .feature-card__info {
@@ -223,7 +240,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
-    padding: 50px 40px 0;
+    padding: 29px 0 0 5px;
   }
 
   .feature-card__info::after {
@@ -234,8 +251,12 @@
   .feature-card__name {
     width: 130px;
     text-align: center;
-    margin: 0 0 5px;
+    margin: 0;
     font-size: 21px;
+  }
+
+  .feature-card__number {
+    margin: 0 auto 13px;
   }
 
   .feature-card__text {
@@ -249,7 +270,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-height: 260px;
+    max-height: 255px;
   }
 
   .features__item--reverse {
@@ -264,12 +285,12 @@
     width: 33%;
     margin-bottom: auto;
     background-image: none;
-    padding: 40px 20px 0;
+    padding: 42px 0 0 0;
   }
 
   .feature-card__name--big {
-    width: 130px;
-    margin: 0 auto 5px;
+    width: 155px;
+    margin: 0 auto;
   }
 
   .feature-card__text--big {
@@ -304,6 +325,10 @@
     }
   }
 
+  .features__intro {
+    padding: 30px 0 0;
+  }
+
   .features__list {
     min-width: 1200px;
   }
@@ -331,12 +356,16 @@
     min-width: 260px;
   }
 
+  .feature-card__number--big {
+    margin: 0 auto 16px;
+  }
+
   .features__bullet-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 400px;
-    padding: 50px 0 0;
+    max-width: 1200px;
+    padding: 55px 0 0;
   }
 
   .features__photo {

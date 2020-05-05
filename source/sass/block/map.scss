@@ -8,9 +8,37 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("/img/bg-map-mobile@2x.jpg");
+  }
 }
 
 .map iframe {
   width: 100%;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    background-image: url("/img/bg-map-tablet@1x.jpg");
+    margin: 60px 0 0;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/bg-map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    background-image: url("/img/bg-map-desktop@1x.jpg");
+    margin: 70px 0 0;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/bg-map-desktop@2x.jpg");
+    }
+  }
 }

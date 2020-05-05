@@ -15,7 +15,7 @@
   text-transform: uppercase;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .interested__text {
@@ -31,13 +31,23 @@
 @media (min-width: $tablet-width) {
   .interested {
     width: 460px;
-    padding: 50px 0 0;
-    margin: 0 auto 50px;
+    padding: 57px 0 0;
+    margin: 0 auto;
+  }
+
+  .interested__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .interested__text {
+    margin-bottom: 45px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .interested {
     margin-bottom: 60px;
+    padding: 56px 0 0;
   }
 }
