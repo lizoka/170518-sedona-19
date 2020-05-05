@@ -67,10 +67,10 @@
   .form__field {
     padding: 0 0 25px 0;
     border: none;
+  }
 
-    &:not(:last-of-type) {
-      border-bottom: none;
-    }
+  .form-field--email {
+    margin-top: 24px;
   }
 }
 
@@ -86,18 +86,40 @@
     padding: 0 20px 0 0;
   }
 
-  .form-field--tel,
-  .form-field--email {
+  .form-field--column {
+    margin-top: 64px;
+  }
+
+  .form-field--tel {
     width: 400px;
-    margin: 0;
+    align-items: center;
+    margin-top: 36px;
 
     label {
       margin: 0;
-      padding: 0 20px 0 0;
+      padding: 0 15px 0 0;
+    }
+
+    &::after {
+      top: 23px;
     }
   }
 
   .form-field--email {
     width: 480px;
+    align-items: center;
+
+    label {
+      margin: 0;
+      padding: 0 19px 0 0;
+    }
+
+    input {
+      width: 310px;
+    }
+  }
+
+  .form-field__info {
+    display: none;
   }
 }

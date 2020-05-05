@@ -40,16 +40,17 @@
 
 .feedback__info {
   color: $font-color-grey;
-  line-height: 21pt;
+  line-height: 19pt;
   font-size: $font-size;
-  margin: 0 auto 20px;
+  margin: 0 auto 15px;
 }
 
 @media (min-width: $tablet-width) {
   .feedback {
-    width: 648px;
-    padding: 70px 0;
+    width: 100%;
+    padding: 70px 60px 0;
     margin: 0 auto;
+    max-width: 960px;
   }
 
   .feedback__header {
@@ -76,6 +77,8 @@
   .feedback__title {
     width: 460px;
     font-size: 30px;
+    text-align: center;
+    margin: 0 auto 27px;
   }
 
   .feedback__info {
@@ -86,24 +89,29 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    width: 960px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0;
+    max-width: 1200px;
+    padding: 0 120px;
+    margin: 0 auto;
   }
 
   .feedback__header {
-    margin: 100px auto 0;
+    margin: 110px auto 0;
 
     &::before {
-      top: -157px;
+      top: -163px;
       right: 0;
       left: -374px;
       height: 70px;
-      width: 1210px;
+      width: 1204px;
       background-image: url("/img/bg-intro-triangle-desktop.svg");
       background-repeat: no-repeat;
     }
+  }
+
+  .feedback__info {
+    margin: 0 0 58px;
   }
 }
