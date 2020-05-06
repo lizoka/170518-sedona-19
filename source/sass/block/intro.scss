@@ -1,13 +1,13 @@
 .intro {
   @include style-reset;
 
-  min-height: 385px;
+  max-height: 389px;
   background-color: #d7e8f0;
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 85px 20px;
+  padding: 90px 20px 85px;
   text-align: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -15,18 +15,12 @@
   }
 }
 
-.intro_img {
-  width: 460px;
-}
-
 @media (min-width: $tablet-width) {
   .intro {
     background-color: #d7e8f0;
     background-image: url("/img/bg-back-tablet@1x.jpg");
-    display: flex;
-    justify-content: center;
     min-height: 518px;
-    padding: 0;
+    padding: 79px 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/bg-back-tablet@2x.jpg");
@@ -34,14 +28,14 @@
   }
 
   .intro_img {
-    width: 400px;
+    width: 460px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro {
-    min-height: 515px;
-    padding: 0;
+    max-height: 515px;
+    padding: 79px 0;
     background-image: url("/img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
