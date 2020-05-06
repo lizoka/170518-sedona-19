@@ -185,12 +185,14 @@
 
   .feedback-form__btn {
     width: 324px;
+    padding: 18px 65px 18px 54px;
   }
 
   .feedback-form__sub {
     display: inline;
     text-transform: uppercase;
     font-size: 14px;
+    margin: 22px 0 0;
     color: #333333;
   }
 }
@@ -239,5 +241,6 @@
 
   .feedback-form__btn {
     width: 50%;
+    padding: 18px 53px 18px 54px;
   }
 }
