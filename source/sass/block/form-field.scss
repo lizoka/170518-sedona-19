@@ -2,7 +2,7 @@
 .form-field--email {
   position: relative;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-start;
 
   label {
     padding-left: 22px;
@@ -48,9 +48,7 @@
 }
 
 .form-field__input {
-  box-sizing: border-box;
   width: 100%;
-  flex-grow: 1;
   height: 58px;
   font-size: 18px;
   line-height: 26px;
@@ -60,7 +58,41 @@
   background-color: #f2f2f2;
   border: none;
   padding: 0 0 0 22px;
-  margin: 0;
+  margin: 0 0 1px 0;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+  }
+}
+
+input:focus {
+  outline: none;
+  border: 3px solid #e5e5e5;
+  box-shadow: 1px 1px 2px 0 #e5e5e5;
+}
+
+input::-moz-placeholder {
+  color: #000000;
+}
+
+input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+input:-ms-input-placeholder {
+  color: #000000;
+}
+
+input::-ms-input-placeholder {
+  color: #000000;
+}
+
+input::placeholder {
+  color: #000000;
 }
 
 @media (min-width: $tablet-width) {
@@ -70,15 +102,37 @@
   }
 
   .form-field--email {
-    margin-top: 24px;
+    margin: 16px 0 28px;
+
+    &::after {
+      top: 32px;
+    }
+  }
+
+  .form-field__input {
+    margin: 0 0 6px;
+
+    &::after {
+      top: 32px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field__input {
+    margin: 0 0 3px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-field {
-    width: 480px;
+    width: 100%;
     padding: 0;
     flex-direction: row;
+  }
+
+  .form-field__input {
+    width: 100%;
   }
 
   .form-field__label {
@@ -93,6 +147,7 @@
   .form-field--tel {
     width: 400px;
     align-items: center;
+    overflow: hidden;
     margin-top: 36px;
 
     label {
@@ -101,13 +156,17 @@
     }
 
     &::after {
-      top: 26px;
+      top: 28px;
     }
   }
 
   .form-field--email {
     width: 480px;
     align-items: center;
+
+    &::after {
+      top: 0;
+    }
 
     label {
       margin: 0;

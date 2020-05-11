@@ -1,5 +1,6 @@
 .form-checkbox {
   width: 100%;
+  position: relative;
   margin: 0 0 60px;
   padding-left: 78px;
 
@@ -17,6 +18,8 @@
 }
 
 .form-checkbox__input {
+  @include visuallyHidden;
+
   appearance: none;
   position: absolute;
 }
@@ -29,6 +32,7 @@
   background-image: none;
   border-radius: 10px;
   margin-left: -78px;
+  top: -18px;
 
   &:hover {
     background-color: #e5e5e5;

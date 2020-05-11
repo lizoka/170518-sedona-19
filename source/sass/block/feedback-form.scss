@@ -12,11 +12,27 @@
 }
 
 .feedback-form__group--radio {
-  padding: 26px 20px 1px;
+  padding: 19px 20px 0;
+}
+
+.feedback-form__group--name {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.feedback-form__inner {
+  width: 100%;
+  overflow: hidden;
 }
 
 .feedback-form__group--checkbox {
-  padding: 20px 20px 11px;
+  padding: 15px 20px 1px;
+}
+
+.feedback-form__checkbox-wrapper {
+  margin: 31px 0 0 0;
 }
 
 .feedback-form__title-wrap {
@@ -31,12 +47,14 @@
   line-height: 26px;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 0 auto 3px;
+  margin: 0 auto;
 }
 
 .feedback-form__field {
   display: flex;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -69,10 +87,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    max-width: 768px;
+    margin: 0 auto;
   }
 
   .feedback-form__field {
-    margin: 10px 0;
+    margin: 15px 0;
   }
 
   .feedback-form__title {
@@ -84,11 +104,10 @@
     position: relative;
     z-index: 1;
     margin: 0 0 45px 0;
-
     font-weight: 700;
   }
 
-  .feedback__title--long {
+  .feedback-form__title--long {
     width: 396px;
     margin: 0 0 5px 0;
   }
@@ -128,6 +147,7 @@
   }
 
   .feedback-form__group--name {
+
     align-items: flex-start;
     margin: 0;
     padding: 0 0 0 55px;
@@ -141,7 +161,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     order: 3;
-    margin-top: 66px;
+    margin-top: 47px;
   }
 
   .feedback-form__group--radio {
@@ -152,7 +172,7 @@
   }
 
   .feedback-form__group--checkbox {
-    margin-top: 32px;
+    margin-top: 18px;
     order: 4;
   }
 
@@ -171,7 +191,7 @@
   }
 
   .feedback-form__textarea {
-    margin: 50px 0;
+    margin: 52px 0;
   }
 
   .feedback-form__bottom {
@@ -200,6 +220,7 @@
 @media (min-width: $desktop-width) {
   .feedback-form__wrapper {
     justify-content: space-between;
+    max-width: 960px;
   }
 
   .feedback-form__title--short {
@@ -213,7 +234,7 @@
   .feedback-form__group--tel {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 62px;
+    margin-top: 50px;
   }
 
   .feedback-form__group--name {
@@ -228,7 +249,7 @@
   }
 
   .feedback-form__group--checkbox {
-    margin-top: 29px;
+    margin-top: 23px;
   }
 
   .feedback-form__group--textarea {

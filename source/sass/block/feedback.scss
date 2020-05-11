@@ -50,7 +50,6 @@
     width: 100%;
     padding: 70px 60px 0;
     margin: 0 auto;
-    max-width: 960px;
   }
 
   .feedback__header {
@@ -101,11 +100,11 @@
     margin: 110px auto 0;
 
     &::before {
-      top: -163px;
+      top: -166px;
       right: 0;
-      left: -374px;
+      left: -370px;
       height: 70px;
-      width: 1204px;
+      width: 1200px;
       background-image: url("/img/bg-intro-triangle-desktop.svg");
       background-repeat: no-repeat;
     }

@@ -5,7 +5,7 @@
   background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% bottom;
-  padding: 50px 44px 65px 44px;
+  padding: 54px 44px 65px 44px;
   text-align: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -28,6 +28,7 @@
     display: flex;
     justify-content: center;
     min-height: 288px;
+    padding-top: 51px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("/img/bg-back-tablet@2x.jpg");

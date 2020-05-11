@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 13px 0 25px;
+  padding: 15px 0 22px;
 }
 
 .gallery__content {
@@ -76,7 +76,7 @@
 }
 
 .gallery__like-icon {
-  fill: #b2b2b2;
+  color: #b2b2b2;
 }
 
 @media (min-width: $tablet-width) {
@@ -151,12 +151,14 @@
     z-index: 0;
     width: inherit;
     top: 185px;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.3);
   }
 
   .gallery__info--big {
     width: 100%;
     top: 320px;
+    left: 0;
   }
 
   .gallery__item-title {
@@ -172,6 +174,6 @@
   }
 
   .gallery__like-icon {
-    fill: #ffffff;
+    color: #ffffff;
   }
 }

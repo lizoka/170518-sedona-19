@@ -28,6 +28,10 @@
   margin: 0 auto 40px;
 }
 
+.interested__wrap {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .interested {
     width: 460px;
@@ -43,11 +47,15 @@
   .interested__text {
     margin-bottom: 45px;
   }
+
+  .interested__wrap {
+    display: inline;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .interested {
     margin-bottom: 60px;
-    padding: 56px 0 0;
+    padding: 62px 0 0;
   }
 }

@@ -45,7 +45,7 @@
   color: $font-color-grey;
   font-size: $font-size;
   line-height: 24px;
-  margin: 0 auto 25px;
+  margin: 0 auto 28px;
 }
 
 @media (min-width: $tablet-width) {
@@ -86,13 +86,13 @@
 
   .media__info {
     width: 430px;
-    margin: 0 auto 66px;
+    margin: 0 auto 68px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .media__header {
-    padding: 105px 0 0;
+    padding: 109px 0 0;
   }
 
   .media__header--photo {
