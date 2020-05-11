@@ -2,33 +2,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
-  width: 50px;
   margin: 2px 2px;
-  background-color: $bg-color;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #669ec0;
-  }
-
-  &:active {
-    background-color: #5496bd;
-  }
 }
 
 .social__link {
   @include style-reset;
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+  width: 47px;
+  background-color: $bg-color;
+  cursor: pointer;
   color: #ffffff;
-  margin: 10px 0 0;
 
-  &:hover svg {
-    fill: #ffffff;
+  &:hover {
+    color: #ffffff;
+    background-color: #669ec0;
   }
 
-  &:active svg {
-    fill: #88b6d1;
+  &:active {
+    color: #88b6d1;
+    background-color: #5496bd;
   }
 }

@@ -67,11 +67,19 @@
   width: 70px;
   min-height: 66px;
   line-height: 0;
-  color: green;
+  color: #5c6870;
   background: 0 0;
   border: none;
   outline: none;
   cursor: pointer;
+
+  &:hover {
+    color: #333333;
+  }
+
+  &:active {
+    color: #b8b8b8;
+  }
 }
 
 .video__button:nth-last-child(2) {
@@ -125,6 +133,15 @@
   .video__button {
     width: 90px;
     min-height: 93px;
+    color: #ffffff;
+
+    &:hover {
+      color: #c2c2c2;
+    }
+
+    &:active {
+      color: #949494;
+    }
   }
 
   .video__icon {

@@ -32,6 +32,9 @@
   margin: -10px 13px 0 0;
 }
 
+.bullet__wrap {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .features__bullet {
@@ -40,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 0 45px;
+    padding: 0 36px;
 
     &:last-child {
       margin-bottom: 0;
@@ -63,7 +66,7 @@
 
   .bullet__text {
     display: block;
-    margin-bottom: 52px;
+    margin-bottom: 56px;
   }
 
 
@@ -71,6 +74,7 @@
     height: 80px;
     width: 80px;
     margin: 0 0 17px 0;
+    fill: #7aadcb;
   }
 }
 
@@ -95,5 +99,9 @@
   .bullet__icon {
     height: 80px;
     width: 80px;
+  }
+
+  .bullet__wrap {
+    display: inline;
   }
 }
