@@ -9,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: -2;
+  z-index: 1;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("/img/bg-map-mobile@2x.jpg");

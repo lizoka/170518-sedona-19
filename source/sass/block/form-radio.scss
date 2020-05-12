@@ -44,6 +44,16 @@
   border: 18px solid #f2f2f2;
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-color: #333333;
+    border: 18px solid #efefef;
+  }
+
+  &:active {
+    background-color: #a4a4a4;
+    border: 18px solid #d5d5d5;
+  }
 }
 
 @media (min-width: $tablet-width) {
